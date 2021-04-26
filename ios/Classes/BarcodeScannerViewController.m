@@ -15,6 +15,8 @@
     [super viewDidLoad];
     self.previewView = [[UIView alloc] initWithFrame:self.view.bounds];
     self.previewView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.previewView.opaque = NO;
+    self.previewView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:_previewView];
     [self.view addConstraints:[NSLayoutConstraint
             constraintsWithVisualFormat:@"V:[previewView]"
